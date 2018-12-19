@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
-    <title>言の葉</title>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <!-- import vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>言の葉</title>
 
-    <!-- import Element UI -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <!-- import vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-    <!-- import index.css -->
-    <link rel="stylesheet" href="./index.css">
+        <!-- import Element UI -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
-</head>
-<body>
-        <canvas id="cvs" style="width:100%; height:100%"></canvas>
+        <!-- import index.css -->
+        <link rel="stylesheet" href="./index.css">
+
+    </head>
+    <body>
+        <!-- leaf -->
+        <canvas id="cvs" ></canvas>
+
+        <!-- contents -->
         <section id="body">
             <div id="app">
                 <el-container>
@@ -31,6 +34,6 @@
                 </el-container>
             </div>
         </section>
-</body>
-<script src="index.js"></script>
+    </body>
+    <script src="index.js"></script>
 </html>

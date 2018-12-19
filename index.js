@@ -14,22 +14,24 @@ var app = new Vue({
 
 // https://www.otwo.jp/blog/canvas_sakura/
 var canvas = document.getElementById("cvs");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
 var imgCnt = 25;          // 描画する画像の数
 var aryImg = [];          // 画像の情報を格納
-var cvsw = 680;           // canvasタグに指定したwidth
-var cvsh = 500;           // canvasタグに指定したheight
+var cvsw = canvas.width;  // canvasタグに指定したwidth
+var cvsh = canvas.height; // canvasタグに指定したheight
 var imgBaseSizeW = 10;    // 画像の基本サイズ横幅
-var imgBaseSizeH = 13;  // 画像の基本サイズ立幅
+var imgBaseSizeH = 15;    // 画像の基本サイズ立幅
 var aspectMax = 1.5;      // アスペクト比計算時の最大値
 var aspectMin = 0.5;      // アスペクト比計算時の最小値
-var speedMax = 0.5;         // 落下速度の最大値
+var speedMax = 2.5;       // 落下速度の最大値
 var speedMin = 0.5;       // 落下速度の最小値
 var angleAdd = 3;         // 画像角度への加算値
 
 // 画像の読み込み
 var img = new Image();
-img.src = "./assets/leaf2.gif";
+img.src = "./assets/leaf.gif";
 img.onload = flow_start;
 
 // 画像のパラメーターを設定
