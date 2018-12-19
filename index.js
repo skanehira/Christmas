@@ -11,7 +11,6 @@ var app = new Vue({
     }
 })
 
-
 // https://www.otwo.jp/blog/canvas_sakura/
 var canvas = document.getElementById("cvs");
 canvas.width = window.innerWidth;
@@ -31,7 +30,7 @@ var angleAdd = 3;         // 画像角度への加算値
 
 // 画像の読み込み
 var img = new Image();
-img.src = "./assets/leaf.gif";
+img.src = "./assets/leaf.png";
 img.onload = flow_start;
 
 // 画像のパラメーターを設定

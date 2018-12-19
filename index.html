@@ -8,6 +8,9 @@
         <!-- import vue.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
+        <!-- import vue-router -->
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
         <!-- import Element UI -->
         <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
         <script src="https://unpkg.com/element-ui/lib/index.js"></script>
@@ -18,18 +21,18 @@
     </head>
     <body>
         <!-- leaf -->
-        <canvas id="cvs" ></canvas>
+        <canvas id="cvs"></canvas>
 
         <!-- contents -->
         <section id="body">
-            <div id="app">
+            <div v-cloak id="app">
                 <el-container>
                     <el-header height="">
                         <p style="text-align: center;"><img class="logo" src="./assets/logo.png" alt=""></p>
                     </el-header>
                     <el-main>
-                        <p style="text-align: center;"><img class="menu" src="./assets/about2.png" @click="about"></p>
-                        <p style="text-align: center;"><img class="menu" src="./assets/kotonoha2.png"></p>
+                        <p style="text-align: center;"><img class="menu" src="./assets/about.png" @click="about"></p>
+                        <p style="text-align: center;"><img class="menu" src="./assets/garden.png"></p>
                     </el-main>
                 </el-container>
             </div>
