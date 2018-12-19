@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>言の葉</title>
+
+    <!-- import vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!-- import Element UI -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <!-- import index.css -->
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+        <canvas id="cvs" style="width:100%; height:100%"></canvas>
+        <section id="body">
+            <div id="app">
+                <el-container>
+                    <el-header height="">
+                        <p style="text-align: center;"><img class="logo" src="./assets/logo.png" alt=""></p>
+                    </el-header>
+                    <el-main>
+                        <p style="text-align: center;"><img class="menu" src="./assets/about2.png" @click="about"></p>
+                        <p style="text-align: center;"><img class="menu" src="./assets/kotonoha2.png"></p>
+                    </el-main>
+                </el-container>
+            </div>
+        </section>
+</body>
+<script src="index.js"></script>
+</html>
